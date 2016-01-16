@@ -32,6 +32,7 @@
     return YES;
 }
 
+// inputView背景色设为透明是无效的
 - (UIPickerView *)inputView {
 
     if (_inputView == nil) {
@@ -52,6 +53,7 @@
     return _inputView;
 }
 
+//  inputAccessoryView 是 UIView即可,不一定非得是UIToolbar
 - (UIToolbar*)inputAccessoryView {
 
     if (_inputAccessoryView == nil) {

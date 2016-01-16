@@ -50,9 +50,12 @@
     self.m_label.backgroundColor        = [UIColor redColor];
     self.m_label.text                   = @"Tap Me";
     self.m_label.textAlignment          = NSTextAlignmentCenter;
-    self.m_label.inputView              = pickerView;
-    self.m_label.inputAccessoryView     = toolBar;
     
+    // inputView背景色设为透明是无效的
+    self.m_label.inputView              = pickerView;
+    
+    //  inputAccessoryView 是 UIView即可,不一定非得是UIToolbar
+    self.m_label.inputAccessoryView     = toolBar;
     
     self.m_label.inputView.backgroundColor = [UIColor clearColor];
 }
